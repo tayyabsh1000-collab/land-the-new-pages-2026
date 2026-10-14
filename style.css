@@ -6,15 +6,22 @@
 
 .top-banner {
     font-family: poppins;
-    font-weight: 400;
+   
+    color: white;
+    /* padding: 7px 0px; */
+    height: 38.400001525878906px;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.top-banner p{
+ font-weight: 400;
     font-size: 17px;
     line-height: 25-5px;
     text-align: center;
-    color: white;
-    padding: 7px 0px;
-    background-color: red;
-}
 
+}
 .main-section .mainu {
     display: flex;
     justify-content: space-between;
@@ -63,6 +70,7 @@
     display: flex;
     align-items: center;
     gap: 18.62px;
+    padding-left: 6px;
 }
 
 .recipient a {
@@ -222,11 +230,15 @@
 }
 
 .hero-content h4 {
-    font-weight: 600;
-    font-size: 28px;
-    line-height: 120%;
+    font-family: inter;
+font-weight: 600;
+font-size: 28px;
+line-height: 120%;
+letter-spacing: 0%;
+vertical-align: middle;
     padding-top: 12px;
     padding-bottom: 39px;
+    color: #444444;
 }
 
 .hero-content .bold {
@@ -266,9 +278,7 @@
     font-weight: 700;
     font-size: 18px;
     line-height: 30px;
-    text-decoration: underline;
-    text-decoration-style: solid;
-    text-decoration-skip-ink: auto;
+
     margin-top: 14px;
 }
 
@@ -376,15 +386,13 @@
 }
 
 .heading p {
-    font-family: inter;
-    font-weight: 700;
-    font-size: 34px;
-    margin: 0 auto;
-    padding-top: 38px;
-    padding-bottom: 24px;
-    text-align: center;
-    line-height: 48px;
-    letter-spacing: -1px;
+   font-family: inter;
+font-weight:700;
+font-size:38px;
+line-height:48px;
+text-align: center;
+padding-bottom: 24px;
+padding-top: 48px;
 }
 
 .pic .image img {
@@ -1115,6 +1123,7 @@
     font-weight: 400;
     font-size: 12px;
     line-height: 16px;
+    text-align: center;
 }
 
 .want {
@@ -1415,9 +1424,17 @@
         font-size: 23px;
         line-height: 130%;
         text-align: center;
-        margin-top: 12px;
+        margin-top: 13.5px;
+    }
+    .sidebar {
+        gap: 18.66px;
     }
 
+    .sub-bar {
+        margin-top: 28px;
+        padding-bottom: 11.55px;
+        margin-bottom: 29px;
+    }
     .reds {
         color: #FB1623;
         font-family: Inter;
@@ -1427,8 +1444,12 @@
         text-align: center;
 
     }
+    .top-banner p {
+        font-size: 13px;
+    }
 
     .hero-images {
+            border: 1px solid #FB1623;
         /* max-height: 204px;
     height: 100%; */
     }
@@ -1449,7 +1470,7 @@
         font-family: lexend;
         font-size: 13px;
         font-weight: 500;
-        padding: 8.5px 0;
+        height: 33px;
     }
 
     .logo img {
@@ -1462,6 +1483,7 @@
         width: 100%;
         flex-direction: column;
         gap: 6px;
+        margin-top: 1.5px;
     }
 
     .logo {
@@ -1510,6 +1532,7 @@
         background-color: #F9F6EF;
         padding: 0 15px;
         padding-top: 9px;
+        margin-top: 0;
     }
 
     .hero-content h3 {
@@ -1519,9 +1542,13 @@
     .hero-content h4 {
         font-size: 20px;
         font-style: italic;
-        padding-top: 20px;
+        padding-top: 18.5px;
         line-height: 32px;
         padding-bottom: 19.5px;
+    }
+    .pay {
+        max-width: none;
+        width: 100%;
     }
 
     .small {
@@ -1580,9 +1607,12 @@
 
     .end {
         padding-top: 24px;
-        padding-bottom: 32px;
+        padding-bottom: 30px;
     }
 
+    .warning-box {
+        padding-bottom: 14.5px;
+    }
     .waste {
         display: flex;
         height: 100%;
@@ -1600,7 +1630,7 @@
     .heading {
         /* font-size: 24px;
         padding: 15px; */
-        display: none;
+        /* display: none; */
     }
 
     .para {
@@ -1669,6 +1699,11 @@
         font-size: 24px;
         line-height: 32px;
         text-align: start;
+        /* padding: 0 15px; */
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-top: 31px;
+        padding-bottom: 8.5px;
     }
 
     .diagram img {
@@ -1721,19 +1756,27 @@
         gap: 16px;
     }
 
-    .lock,
-    .lock-1,
-    .lock-2,
     .lock-3,
     .lock-4,
     .lock-5 {
 
         padding-bottom: 12px;
     }
-
+    .lock {
+         padding-bottom: 11px;
+    }
+    .lock-1 {
+        margin-top: 1.5px;
+         padding-bottom: 12px;
+    }
+    .lock-2 {
+        margin-top: 0;
+        padding-bottom: 8.5px;
+    }
     .lock-1 p {
         max-width: 275px;
     }
+
 
     .lock-3 p {
         width: 289px;
@@ -1819,6 +1862,7 @@
 
     .boxes {
         padding-bottom: 16px;
+        padding: 12px 7px;
     }
 
     .ingredients-box {
