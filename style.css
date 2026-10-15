@@ -9,7 +9,7 @@
    
     color: white;
     /* padding: 7px 0px; */
-    height: 38.400001525878906px;
+    height: 37.400001525878906px;
     background-color: red;
     display: flex;
     justify-content: center;
@@ -101,6 +101,10 @@
 
 .list a {
     text-decoration: none;
+    font-family: inter;
+font-weight:400;
+font-size:16px;
+line-height:20px;
 }
 
 .hero {
@@ -327,6 +331,7 @@ vertical-align: middle;
     border: 1px solid #D95C55;
     border-radius: 16px;
     padding: 16px 12px;
+    padding-bottom: 15px;
     display: flex;
     flex-direction: column;
     gap: 16px;
@@ -406,8 +411,9 @@ padding-top: 48px;
     width: 100%;
     margin: 0 auto;
     display: flex;
-    align-items: center;
+    /* align-items: center; */
     gap: 32px;
+    /* margin-top: 12px; */
 }
 
 .locks {
@@ -416,14 +422,12 @@ padding-top: 48px;
     display: flex;
     flex-direction: column;
     margin: 0 auto;
-    margin-top: 7px;
+    margin-top: 12px;
 }
 
-.lock,
 .lock-1,
 .lock-2,
 .lock-3,
-.lock-4,
 .lock-5 {
     display: flex;
     gap: 15px;
@@ -431,6 +435,21 @@ padding-top: 48px;
     border-bottom: 0.75px solid var(--color-grey-85, #D9D9D9);
     padding-bottom: 11px;
 }
+.lock{
+     display: flex;
+    gap: 15px;
+    margin-bottom: 10px;
+    border-bottom: 0.75px solid var(--color-grey-85, #D9D9D9);
+    padding-bottom: 9px;
+}
+.lock-4{
+   display: flex;
+    gap: 15px;
+    margin-bottom: 10px;
+    border-bottom: 0.75px solid var(--color-grey-85, #D9D9D9);
+    padding-bottom: 10px;  
+}
+
 
 .lock-end {
     display: flex;
@@ -439,25 +458,47 @@ padding-top: 48px;
     padding-bottom: 11px;
 }
 
-.pen {
-    max-width: 333px;
-    width: 100%;
-    padding-left: 6px;
+.pen ,.pen-short{
+  
+    /* padding-left: 6px; */
 }
 
 .waste {
     display: none;
     width: 100%;
 }
-
-.pen p {
+.pen-3 p{
+      width: 294px;
     font-weight: 400;
     font-size: 13.11px;
     line-height: 140%;
 }
+.pen p {
+      /* max-width: 336px; */
+    width: 336px;
+    font-weight: 400;
+    font-size: 13.11px;
+    line-height: 140%;
 
-.pen h4 {
+}
+.pen-4 p{
+     width:330px;
+    font-weight: 400;
+    font-size: 13.11px;
+    line-height: 140%;
+}
+.pen-short p{
+     width:236px;
+    font-weight: 400;
+    font-size: 13.11px;
+    line-height: 140%;
+}
+.pen h4,.pen-short h4,.pen-3 h4,.pen-4 h4{
     padding-bottom: 5.62px;
+    font-family:inter;
+font-weight: 700;
+font-size: 16.86px;
+line-height: 120%;
 }
 
 .box-section {
@@ -645,7 +686,7 @@ padding-top: 48px;
 
 .mid-section h1 {
     margin: 0 auto;
-    padding: 39px 0 10px 0;
+    padding: 48px 0 10px 0;
     font-family: inter;
     font-weight: 700;
     font-size: 38px;
@@ -744,9 +785,10 @@ padding-top: 48px;
 }
 
 .images {
-
     display: flex;
     gap: 22px;
+    justify-content: center;
+    align-items: center;
 }
 
 .picks {
@@ -765,7 +807,7 @@ padding-top: 48px;
     width: 100%;
     margin: auto;
     padding-bottom: 42px;
-    padding-top: 32px;
+    padding-top: 34px;
 }
 
 .sec h2 {
@@ -776,15 +818,19 @@ padding-top: 48px;
     font-size: 24px;
     line-height: 48px;
 }
-
+.des{
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
 .sec h1 {
     text-align: center;
-    padding-bottom: 42px;
-    padding-top: 28px;
+    padding-bottom: 38px;
+    padding-top: 27px;
     font-family: Inter;
     font-weight: 700;
     font-size: 40px;
-    line-height: 40px;
+    line-height: 48px;
     color: #212529;
 }
 
@@ -981,7 +1027,7 @@ padding-top: 48px;
 .header-2 {
     font-weight: 700;
     font-size: 20px;
-    padding-top: 16px;
+    padding-top: 15px;
     text-align: center;
     margin: 0 auto;
     padding-bottom: 8px;
@@ -1099,7 +1145,7 @@ padding-top: 48px;
     padding: 16px 0;
     border-radius: 8px;
     cursor: pointer;
-    margin-top: 24px;
+    margin-top: 22px;
 
 }
 
@@ -1176,7 +1222,7 @@ padding-top: 48px;
     text-align: center;
     font-size: 12px;
     font-weight: 400;
-    margin-top: 25px;
+    margin-top: 23px;
 }
 
 .last-image {
@@ -1412,7 +1458,7 @@ padding-top: 48px;
 
 
 
-@media (max-width : 768px) {
+@media (min-width:370px) and (max-width : 600px) {
     .hero-title {
         display: none;
     }
@@ -1424,7 +1470,7 @@ padding-top: 48px;
         font-size: 23px;
         line-height: 130%;
         text-align: center;
-        margin-top: 13.5px;
+        margin-top: 9.5px;
     }
     .sidebar {
         gap: 18.66px;
@@ -1508,7 +1554,9 @@ padding-top: 48px;
         padding-bottom: 13px;
         background-color: #F9F6EF;
     }
-
+.list  a{ 
+font-size: 12px;
+}
     .hero {
         background-color: #F9F6EF;
     }
@@ -1641,22 +1689,33 @@ padding-top: 48px;
         margin-top: 38px;
         margin-bottom: 9px;
     }
-
-    .pen h4 {
+.pen-4 h4 {
+     font-family: inter;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 120%;
+        color: #000000;
+        padding-bottom: 6px;
+}
+    .pen h4,.pen-short h4,.pen-3 h4{
         font-family: inter;
         font-weight: 700;
         font-size: 18px;
         line-height: 120%;
         color: #000000;
-        padding-bottom: 8px;
+        padding-bottom: 6px;
     }
-
+.pen-short h4{
+    padding-bottom: 7.5px;
+}
     .pen p {
         font-family: inter;
         font-weight: 400;
-        font-size: 14px;
+        font-size: 13.9px;
         line-height: 140%;
         /* padding: 0 10px; */
+        max-width:290px;
+        width: 100%;
     }
 
     .think {
@@ -1678,7 +1737,7 @@ padding-top: 48px;
     .pic {
         flex-direction: column;
         padding: 15px;
-        gap: 25px;
+        gap: 21px;
     }
 
     .wrong-face {
@@ -1755,39 +1814,56 @@ padding-top: 48px;
         flex-direction: column;
         gap: 16px;
     }
-
-    .lock-3,
-    .lock-4,
+.lock-4{
+        padding-bottom: 12px;
+margin-bottom: 12px;
+}
+    
     .lock-5 {
 
         padding-bottom: 12px;
     }
+    .lock-3{
+        padding-bottom: 12px;
+        margin-bottom: 12.5px;
+    }
+
     .lock {
          padding-bottom: 11px;
+         margin-bottom: 12px;
     }
     .lock-1 {
         margin-top: 1.5px;
          padding-bottom: 12px;
+         margin-bottom: 13px;
     }
     .lock-2 {
         margin-top: 0;
-        padding-bottom: 8.5px;
+        padding-bottom: 9.5px;
+        margin-bottom: 13px;
     }
-    .lock-1 p {
-        max-width: 275px;
+    .pen-short p {
+       max-width: 236px;
+       width: 100%;
     }
 
 
     .lock-3 p {
-        width: 289px;
+        max-width: 289px;
+        /* width: 100%; */
     }
 
-    .lock-4 p {
-        width: 262px;
+    .pen-4 p {
+        /* max-width: 252px; */
+        /* width: 100%; */
+        max-width: 253px;
+        width: 100%;
+        line-height: 20px;
     }
 
-    .lock-2 p {
+    .pen-3 p {
         max-width: 237px;
+        width: 100%;
         font-size: 14.5px;
     }
 
@@ -1830,12 +1906,15 @@ padding-top: 48px;
     }
 
     .picks img {
-        width: 113px;
-        height: 141px;
+        max-width: 113px;
+        width: 100%;
+        max-height: 141px;
+        height: 100%;
     }
 
     .box {
         align-items: start;
+        padding-bottom: 13px;
     }
 
     .box p {
@@ -1863,6 +1942,7 @@ padding-top: 48px;
     .boxes {
         padding-bottom: 16px;
         padding: 12px 7px;
+        padding-bottom: 16px;
     }
 
     .ingredients-box {
@@ -1880,6 +1960,7 @@ padding-top: 48px;
         line-height: 24px;
         text-align: center;
         padding-top: 36px;
+        padding-bottom: 36px;
     }
 
     .non {
@@ -1891,7 +1972,7 @@ padding-top: 48px;
         font-family: Inter;
         font-weight: 400;
         font-size: 17px;
-        line-height: 23px;
+        line-height: 25px;
         text-align: center;
     }
 
@@ -1914,7 +1995,7 @@ padding-top: 48px;
     }
 
     .sec-add {
-        margin-top: 26px;
+        margin-top: 25px;
     }
 
     .response-section {
@@ -2068,7 +2149,7 @@ padding-top: 48px;
         gap: 8px;
         padding: 0 15px;
         margin-top: 10px;
-        margin-bottom: 22px;
+        margin-bottom: 20px;
     }
 
     .model p {
@@ -2112,7 +2193,7 @@ padding-top: 48px;
         max-width: none;
         padding: 15px;
         padding-bottom: 14px;
-        padding-top: 8.6px;
+        padding-top: 6px;
     }
 
     .btn-primary {
@@ -2197,7 +2278,7 @@ padding-top: 48px;
     }
 
     .add {
-        margin-top: 27.5px;
+        margin-top: 25.5px;
     }
 
     .borders {
@@ -2356,4 +2437,372 @@ padding-top: 48px;
     .purchase {
         width: 100%;
     }
+}
+
+/* new responsiveness */
+/* =========================================================
+   TABLET  (601px - 1100px)
+   ========================================================= */
+@media (min-width: 601px) and (max-width: 1100px) {
+
+    .top-banner { padding: 0 15px; }
+    .top-banner p { font-size: 15px; }
+
+    .menu { padding: 0 20px; }
+    .logo img { max-width: 100%; }
+
+    .hero { padding: 20px; }
+    .hero-title {
+        font-size: 34px;
+        margin-top: 30px;
+        line-height: 1.25;
+    }
+    .sub-bar { max-width: 100%; }
+
+    .hero-images { max-width: 100%; }
+    .img-box { min-height: auto; width: 50%; }
+    .img-box img { max-width: 100%; width: 100%; height: auto; display: block; }
+    .badge {
+        font-size: 17px;
+        left: 50%;
+        transform: translateX(-50%);
+        max-width: 85%;
+        text-align: center;
+        padding: 6px;
+    }
+
+    .hero-content { padding: 0 24px; }
+    .hero-content h3 { font-size: 32px; }
+    .hero-content h4 { font-size: 24px; }
+
+    .dangerous { padding: 30px 24px 15px; }
+    .dangerous h3 { font-size: 32px; }
+    .warning-box { max-width: 100%; }
+    .diagram img { height: auto; max-width: 100%; }
+
+    .heading { padding: 0 24px; }
+    .heading p { font-size: 32px; line-height: 42px; }
+
+    .pic {
+        flex-direction: column;
+        align-items: center;
+        padding: 0 24px;
+        gap: 20px;
+    }
+    .pic .image img { max-width: 100%; display: block; margin: 0 auto; }
+    .locks { max-width: 560px; margin-top: 0; }
+    .pen p,
+    .pen-3 p,
+    .pen-4 p,
+    .pen-short p { width: 100%; max-width: 100%; }
+
+    .box-section { padding-left: 20px; padding-right: 20px; }
+    .box-section h1 { font-size: 32px; line-height: 42px; }
+    .boxes { max-width: 100%; }
+
+    .mid-section { padding: 0 20px 20px; }
+    .mid-section h1 { font-size: 32px; }
+    .mind { flex-direction: column; align-items: center; margin-top: 10px; }
+    .images { flex-wrap: wrap; gap: 12px; }
+    .images img { width: calc(33.33% - 10px); height: auto; }
+    .picture { flex-wrap: wrap; justify-content: center; gap: 20px; }
+    .cardes,
+    .second-cardes,
+    .third-cardes {
+        margin-top: 20px;
+        margin-bottom: 0;
+        padding-bottom: 24px;
+    }
+
+    .sect { padding: 32px 24px 42px; }
+    .sec h1 { font-size: 30px; line-height: 38px; }
+    .sect p { font-size: 18px; line-height: 32px; }
+
+    .four-section {
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 24px;
+        padding: 30px 20px;
+    }
+    .cards,
+    .cads,
+    .cads-sec {
+        flex: 0 1 340px;
+        max-height: none;
+        height: auto;
+        margin-top: 0;
+    }
+    .card-section { padding-right: 15px; }
+    .tallow,
+    .tallow-face,
+    .tallowface-wash { display: block; margin-left: auto; margin-right: auto; padding-left: 0; max-width: 100%; }
+    .add,
+    .sec-add { max-width: 100%; }
+
+    .want { padding: 0 20px; }
+    .safe { flex-wrap: wrap; justify-content: center; gap: 16px 30px; }
+
+    .second-last { padding: 0 20px 33px; }
+    .faq-question h3 { font-size: 20px; }
+
+    .model { flex-direction: column; gap: 12px; padding: 0 20px; }
+    .right { max-width: 100%; }
+
+    .btn-primary { max-width: 300px; padding: 12px 40px; }
+    .images{
+        display: none;
+    }
+    .picks{
+        display: flex;
+        justify-content: space-between;
+        margin: auto;
+       max-width: 500px;
+       width: 100%;
+    }
+}
+
+
+/* =========================================================
+   SMALL MOBILE  (369px se chhoti screens)
+   ========================================================= */
+@media (max-width: 370px) {
+
+    /* ---- show / hide ---- */
+    .hero-title,
+    .hero-content h3,
+    .think,
+    .non,
+    .cards,
+    .cads,
+    .cads-sec,
+    .images,
+    .faq-item:nth-child(7) h3 { display: none; }
+
+    .hero-title-res { display: block; }
+    .birth { display: flex; }
+    .waste { display: flex; height: auto; }
+    .think-2 { display: flex; flex-direction: column; gap: 14px; padding-top: 26px; font-size: 15px; }
+    .bold-res { display: block; font-size: 15px; line-height: 23px; text-align: center; }
+    .picks { display: flex; gap: 6px; width: 100%; margin: 16px auto 0; justify-content: space-between; }
+    .picks img { width: 32%; max-width: 113px; height: auto; }
+    .faq-item:nth-child(7) h4 { display: block; font-size: 16px; font-weight: 600; line-height: 150%; }
+
+    /* ---- banner / menu ---- */
+    .top-banner { height: auto; min-height: 30px; padding: 4px 8px; }
+    .top-banner p { font-size: 11px; line-height: 16px; }
+    .menu { flex-direction: column; gap: 6px; margin-top: 1.5px; }
+    .logo { margin: auto; padding-top: 6px; }
+    .logo img { max-width: 140px; width: 100%; display: block; margin: auto; }
+    .list {
+        justify-content: space-evenly;
+        padding: 10px 4px;
+        background-color: #F9F6EF;
+    }
+    .list a { font-size: 10px; }
+    .wrapper { gap: 6px; }
+    .recipient { gap: 6px; padding-left: 2px; }
+    .sidebar { gap: 6px; }
+
+    /* ---- hero ---- */
+    .hero,
+    .hero-content,
+    .danger { background-color: #F9F6EF; }
+    .hero { padding: 15px 12px; }
+    .hero-title-res { font-size: 19px; line-height: 130%; text-align: center; margin-top: 10px; }
+    .reds { color: #FB1623; font-weight: 900; font-size: 20px; }
+    .sub-bar { margin: 20px auto; padding: 10px 6px; font-size: 14px; }
+    .sub-bar .next { max-width: 190px; }
+    .hero-images { border: 1px solid #FB1623; width: 100%; }
+    .img-box { width: 50%; min-height: auto; }
+    .img-box img { width: 100%; height: auto; display: block; }
+    .badge {
+        font-size: 8px;
+        left: 6px;
+        bottom: 4px;
+        max-width: 105px;
+        padding: 3px;
+        border: 0.7px solid white;
+    }
+
+    .hero-content { padding: 9px 12px 0; margin-top: 0; }
+    .birth { font-size: 20px; line-height: 28px; }
+    .hero-content h4 { font-size: 17px; font-style: italic; line-height: 26px; padding: 14px 0; }
+    .small { gap: 20px; }
+    .small p { font-size: 15px; line-height: 23px; }
+    .bold { font-size: 15px; padding-bottom: 20px; }
+
+    /* ---- danger ---- */
+    .dangerous { padding: 20px 12px 16px; }
+    .dangerous h3 { font-size: 20px; padding: 0 0 22px; }
+    .paragraph { gap: 14px; }
+    .first-par,
+    .dangerous p { font-size: 15px; line-height: 23px; }
+    .warning-item { gap: 8px; }
+    .warning-item p { font-size: 14px; line-height: 22px; }
+    .warning-item img { width: 20px; flex-shrink: 0; }
+    .wrong-face { font-size: 15px; line-height: 23px; padding-bottom: 24px; }
+    .diagram img { height: auto; width: 100%; }
+
+    /* ---- heading + features ---- */
+    .heading p { font-size: 20px; line-height: 28px; text-align: start; padding: 26px 12px 8px; }
+    .pic { flex-direction: column; padding: 12px; gap: 20px; }
+    .pic .image img { width: 100%; max-width: 100%; }
+    .locks { width: 100%; max-width: 100%; margin-top: 0; }
+    .lock,
+    .lock-1,
+    .lock-2,
+    .lock-3,
+    .lock-4 { gap: 10px; padding-bottom: 10px; }
+    .lock-end { gap: 10px; }
+    .locks img { width: 36px; height: 36px; flex-shrink: 0; }
+    .pen h4,
+    .pen-short h4,
+    .pen-3 h4,
+    .pen-4 h4 { font-size: 16px; }
+    .pen p,
+    .pen-short p,
+    .pen-3 p,
+    .pen-4 p { width: 100%; max-width: 100%; font-size: 13px; }
+
+    /* ---- ingredients ---- */
+    .box-section { margin-top: 10px; padding-top: 24px; }
+    .box-section h1 { font-size: 20px; line-height: 28px; padding: 0 12px; }
+    .box-section h5 { font-size: 15px; line-height: 23px; text-align: start; padding: 16px 12px; }
+    .box-section h5 span { font-size: 15px; }
+    .third-section { padding: 2px 10px; }
+    .boxes { max-width: 100%; padding: 10px 6px; }
+    .box,
+    .box-2,
+    .third-box { align-items: flex-start; gap: 10px; }
+    .box .img,
+    .box-2 .img,
+    .third-box .img { margin-left: 4px; width: 44px; height: auto; flex-shrink: 0; }
+    .box p,
+    .box-2 p,
+    .third-box p { font-size: 12px; line-height: 140%; }
+    .text h4 { font-size: 16px; }
+    .ingredients-box { padding-bottom: 30px; }
+    .icone { padding-top: 30px; }
+
+    /* ---- reviews ---- */
+    .mid-section { padding: 0 12px 10px; }
+    .mid-section h1 { font-size: 22px; line-height: 30px; padding: 30px 0; }
+    .mind { flex-direction: column; align-items: flex-start; margin-top: 20px; width: 100%; }
+    .picture { flex-direction: column; gap: 16px; width: 100%; }
+    .cardes,
+    .second-cardes,
+    .third-cardes { max-width: none; width: 100%; margin: 0; padding: 14px; }
+    .pay { max-width: none; width: 100%; }
+    .card-text { font-size: 13px; line-height: 19px; }
+
+    /* ---- offer ---- */
+    .sect { padding: 17px 12px; }
+    .sect h2 { font-size: 20px; line-height: 30px; }
+    .sect h1 { font-size: 17px; line-height: 26px; padding: 8px 0 22px; }
+    .sect p { font-size: 15px; line-height: 23px; }
+    .on { padding-top: 20px; }
+    .buttone { max-width: none; padding: 6px 12px 14px; }
+    .purchase { width: 100%; max-width: 100%; }
+    .one-time { max-width: none; width: 100%; padding: 20px 8px; font-size: 12px; }
+    .sub { max-width: none; width: 100%; margin-left: -10px; padding: 13px 6px; gap: 6px; }
+    .sub p { font-size: 12px; }
+    .sale { max-width: none; width: 100%; padding: 4px; }
+    .sale p { font-size: 11px; }
+
+    /* ---- price cards (mobile version) ---- */
+    .response-section { display: flex; flex-direction: column; gap: 5px; }
+    .four-section { flex-direction: column; gap: 16px; padding: 0; }
+    .price-cards,
+    .price-sec-cards,
+    .price-one-cards {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: white;
+        border-radius: 8px;
+        overflow: hidden;
+        width: calc(100% - 20px);
+        max-width: 350px;
+        margin: 10px auto 0;
+        padding-bottom: 20px;
+    }
+    .price-one-cards { padding: 10px 10px 20px; }
+    .mobile-cards,
+    .mobile-cards-3 {
+        display: flex;
+        align-items: center;
+        background-color: white;
+        gap: 10px;
+        width: 100%;
+        padding: 0 8px;
+    }
+    .mobile-cards img,
+    .mobile-cards-3 img { width: 38%; max-width: 120px; height: auto; margin: 0; flex-shrink: 0; }
+    .two-img,
+    .three-img { margin-left: 0; }
+    .mobile { padding-top: 12px; flex: 1; min-width: 0; }
+    .border,
+    .borders {
+        width: 100%;
+        height: 32px;
+        font-weight: 700;
+        font-size: 14px;
+        text-align: center;
+        color: white;
+        padding: 7px 0;
+        border-radius: 8px 8px 0 0;
+    }
+    .border { background-color: #FB6F50; }
+    .borders { background-color: #CB3052; }
+    .headers { font-size: 14px; font-weight: 700; }
+    .ideals,
+    .ideals-1 { font-size: 13px; line-height: 19px; padding: 8px 0 10px; }
+    .unders { font-size: 15px; color: #F47270; }
+    .dollars { font-size: 20px; font-weight: 400; line-height: 20px; padding-top: 6px; }
+    .dollars span { font-size: 12px; line-height: 16px; }
+    .container { display: flex; flex-direction: column; gap: 3px; padding-top: 12px; }
+    .card-centers { display: flex; align-items: center; gap: 6px; }
+    .card-centers p { font-size: 11px; line-height: 15px; }
+    .add,
+    .sec-add { max-width: calc(100% - 20px); margin-top: 20px; padding: 14px 0; }
+    .add p,
+    .sec-add p { font-size: 14px; }
+
+    /* ---- trust / want ---- */
+    .want { padding: 15px 12px 18px; margin-top: 24px; }
+    .safe { flex-direction: column; width: 100%; margin-top: 24px; gap: 14px; }
+    .free,
+    .day,
+    .usa { margin: 0 auto; max-width: 100%; justify-content: flex-start; }
+    .checkout { margin-top: 18px; }
+    .checkout p { font-size: 12px; line-height: 16px; color: #212529; }
+    .last-image img { max-width: 100%; }
+
+    /* ---- FAQ ---- */
+    .second-last { padding: 12px 12px 16px; }
+    .faz { font-size: 28px; padding-top: 19px; }
+    .faq-item { padding: 14px; }
+    .faq-question { gap: 8px; }
+    .faq-question h3 { font-size: 16px; line-height: 150%; }
+    .faq-answer p { font-size: 14px; }
+    .icon { font-size: 28px; margin-top: -8px; width: 28px; flex-shrink: 0; }
+    .faq-item.active .icon::after { font-size: 28px; }
+
+    /* ---- footer ---- */
+    .last-section { margin-top: 16px; }
+    .model { flex-direction: column-reverse; gap: 8px; padding: 0 12px; margin: 10px 0 22px; }
+    .model p { text-align: center; }
+    .right { text-align: center; line-height: 16px; max-width: 100%; }
+    .box-btn { padding: 24px 0; }
+    .box-button { margin: 24px 0; }
+    .btn-primary {
+        max-width: 220px;
+        width: 100%;
+        margin: auto;
+        padding: 10px 0;
+        justify-content: center;
+    }
+    .btn-primary p { font-size: 15px; line-height: 22px; text-align: center; }
+    .btn-primary img { width: 15px; height: 15px; }
 }
