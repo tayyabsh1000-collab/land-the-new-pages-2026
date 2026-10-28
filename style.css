@@ -81,10 +81,10 @@
 
 .list {
     font-family: poppins;
-    /* max-width: 460px; */
+    max-width: 398px;
     width: 100%;
     display: flex;
-    gap: 2.32px;
+    gap: 6.32px;
     list-style: none;
 }
 
@@ -137,11 +137,11 @@ line-height:20px;
     width: 100%;
     margin: 0 auto;
     margin-top: 23px;
-    margin-bottom: 23px;
+    margin-bottom: 21px;
     font-family: inter;
     font-size: 16px;
     font-weight: 400;
-    padding: 12px 0 10.5px 0;
+    padding: 12px 0 12px 0;
     border: 1px solid #0481c5;
     background-color: #D6EDFC;
     border-radius: 16PX;
@@ -240,8 +240,8 @@ font-size: 28px;
 line-height: 120%;
 letter-spacing: 0%;
 vertical-align: middle;
-    padding-top: 12px;
-    padding-bottom: 39px;
+    padding-top: 13px;
+    padding-bottom: 40px;
     color: #444444;
 }
 
@@ -295,7 +295,7 @@ vertical-align: middle;
 }
 
 .dangerous h3 {
-    padding: 19px 0 35px 0;
+    padding: 19px 0 36px 0;
     font-weight: 700;
     font-size: 38px;
 }
@@ -330,7 +330,7 @@ vertical-align: middle;
     background: #FDF4F4;
     border: 1px solid #D95C55;
     border-radius: 16px;
-    padding: 16px 12px;
+    padding: 15.5px 12px;
     padding-bottom: 15px;
     display: flex;
     flex-direction: column;
@@ -500,7 +500,13 @@ font-weight: 700;
 font-size: 16.86px;
 line-height: 120%;
 }
-
+.pen h1{
+     padding-bottom: 5.62px;
+    font-family:inter;
+font-weight: 700;
+font-size: 16.86px;
+line-height: 120%;
+}
 .box-section {
     margin: 0 auto;
     background-color: #FCF6F0;
@@ -563,7 +569,7 @@ line-height: 120%;
     max-width: 710px;
     width: 100%;
     padding-top: 16px;
-    padding-bottom: 11px;
+    padding-bottom: 10px;
     align-items: center;
     border-bottom: 0.8px solid #99D5A8;
 }
@@ -576,7 +582,7 @@ line-height: 120%;
     max-width: 710px;
     width: 100%;
     padding-top: 28px;
-    padding-bottom: 12px;
+    padding-bottom: 11.5px;
     align-items: center;
     border-bottom: 0.8px solid #99D5A8;
 }
@@ -601,7 +607,7 @@ line-height: 120%;
     max-width: 710px;
     width: 100%;
     padding-top: 28px;
-    padding-bottom: 12px;
+    padding-bottom: 14px;
     align-items: center;
 }
 
@@ -686,7 +692,7 @@ line-height: 120%;
 
 .mid-section h1 {
     margin: 0 auto;
-    padding: 48px 0 10px 0;
+    padding: 48px 0 12px 0;
     font-family: inter;
     font-weight: 700;
     font-size: 38px;
@@ -807,7 +813,7 @@ line-height: 120%;
     width: 100%;
     margin: auto;
     padding-bottom: 42px;
-    padding-top: 34px;
+    padding-top: 30px;
 }
 
 .sec h2 {
@@ -977,7 +983,7 @@ line-height: 120%;
     max-width: 350px;
     width: 100%;
     /* height: 742px; */
-    margin-top: -20px;
+    margin-top: -22px;
     /* padding-bottom: 30px; */
 
 }
@@ -1624,13 +1630,16 @@ font-size: 12px;
 
     .dangerous {
         padding-bottom: 16px;
+        padding-top: 25px;
     }
 
     .dangerous h3 {
         font-size: 24px;
         font-weight: 700;
+        padding-bottom: 30px;
+        line-height: 32px;
         padding-top: 0px;
-        padding-bottom: 32px;
+
     }
 
     .first-par {
@@ -1663,6 +1672,7 @@ font-size: 12px;
     }
     .waste {
         display: flex;
+        max-height:255px ;
         height: 100%;
 
     }
@@ -1705,6 +1715,14 @@ font-size: 12px;
         color: #000000;
         padding-bottom: 6px;
     }
+    .pen h1{
+        font-family: inter;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 120%;
+        color: #000000;
+        padding-bottom: 7.5px;
+    }
 .pen-short h4{
     padding-bottom: 7.5px;
 }
@@ -1737,7 +1755,7 @@ font-size: 12px;
     .pic {
         flex-direction: column;
         padding: 15px;
-        gap: 21px;
+        gap: 20px;
     }
 
     .wrong-face {
@@ -1761,7 +1779,7 @@ font-size: 12px;
         /* padding: 0 15px; */
         padding-left: 15px;
         padding-right: 15px;
-        padding-top: 31px;
+        padding-top: 33px;
         padding-bottom: 8.5px;
     }
 
@@ -1776,7 +1794,7 @@ font-size: 12px;
     .mind {
         flex-direction: column;
         align-items: start;
-        margin-top: 24px;
+        margin-top: 23px;
     }
 
     .mid-section h1 {
@@ -1795,14 +1813,14 @@ font-size: 12px;
         text-align: center;
         color: #212529;
         padding-top: 8px;
-        padding-bottom: 26px;
+        padding-bottom: 24px;
     }
 
     .sect p {
         font-family: Inter;
         font-weight: 400;
         font-size: 17px;
-        line-height: 25px;
+        line-height: 27px;
         text-align: center;
     }
 
@@ -1886,6 +1904,7 @@ margin-bottom: 12px;
         font-size: 17px;
         line-height: 25px;
         text-align: start;
+        padding-top: 25px 0;
     }
 
     .box-section h5 span {
@@ -1914,7 +1933,7 @@ margin-bottom: 12px;
 
     .box {
         align-items: start;
-        padding-bottom: 13px;
+        padding-bottom: 12px;
     }
 
     .box p {
@@ -1942,7 +1961,7 @@ margin-bottom: 12px;
     .boxes {
         padding-bottom: 16px;
         padding: 12px 7px;
-        padding-bottom: 16px;
+        padding-bottom: 15px;
     }
 
     .ingredients-box {
@@ -1957,10 +1976,10 @@ margin-bottom: 12px;
         font-family: inter;
         font-weight: 700;
         font-size: 26px;
-        line-height: 24px;
+        line-height: 32px;
         text-align: center;
-        padding-top: 36px;
-        padding-bottom: 36px;
+        padding-top: 32px;
+        padding-bottom: 24px;
     }
 
     .non {
@@ -1991,7 +2010,7 @@ margin-bottom: 12px;
     }
 
     .on {
-        padding-top: 26px;
+        padding-top: 22px;
     }
 
     .sec-add {
@@ -2001,7 +2020,7 @@ margin-bottom: 12px;
     .response-section {
         display: flex;
         flex-direction: column;
-        gap: 5px;
+        gap: 7px;
     }
 
     .img-box {
@@ -2110,7 +2129,7 @@ margin-bottom: 12px;
     }
 
     .dollars {
-        padding-top: 8px;
+        padding-top: 10px;
         line-height: 20px;
     }
 
@@ -2149,7 +2168,7 @@ margin-bottom: 12px;
         gap: 8px;
         padding: 0 15px;
         margin-top: 10px;
-        margin-bottom: 20px;
+        margin-bottom: 22.5px;
     }
 
     .model p {
@@ -2172,7 +2191,7 @@ margin-bottom: 12px;
     }
 
     .checkout {
-        margin-top: 18px;
+        margin-top: 20px;
     }
 
     .last-image {
@@ -2255,7 +2274,7 @@ margin-bottom: 12px;
     .price-sec-cards .mobile {
         /* padding: 0 28px; */
 
-        padding-top: 20px;
+        padding-top: 18px;
     }
 
     .price-one-cards {
@@ -2309,6 +2328,7 @@ margin-bottom: 12px;
     .dollars {
         font-weight: 400;
         font-size: 24px;
+        padding-top: ;
     }
 
     .dollars span {
