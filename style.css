@@ -9,16 +9,17 @@
    
     color: white;
     /* padding: 7px 0px; */
-    height: 37.400001525878906px;
+    height: 38.400001525878906px;
     background-color: red;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .top-banner p{
- font-weight: 400;
+    font-family: poppins;
+    font-weight: 400;
     font-size: 17px;
-    line-height: 25-5px;
+    line-height: 25.5px;
     text-align: center;
 
 }
@@ -220,8 +221,8 @@ line-height:20px;
 }
 
 .dangerous {
-    padding: 30px 20px;
-    max-width: 990px;
+    padding: 30px 0px;
+    max-width: 970px;
     width: 100%;
     margin: auto;
 }
@@ -570,7 +571,7 @@ line-height: 120%;
     width: 100%;
     padding-top: 16px;
     padding-bottom: 10px;
-    align-items: center;
+    align-items: start;
     border-bottom: 0.8px solid #99D5A8;
 }
 
@@ -583,7 +584,7 @@ line-height: 120%;
     width: 100%;
     padding-top: 28px;
     padding-bottom: 11.5px;
-    align-items: center;
+    align-items: start;
     border-bottom: 0.8px solid #99D5A8;
 }
 
@@ -608,16 +609,16 @@ line-height: 120%;
     width: 100%;
     padding-top: 28px;
     padding-bottom: 14px;
-    align-items: center;
+    align-items: start;
 }
 
 .third-box p {
     line-height: 140%;
 }
 
-.img {
+/* .img {
     margin-left: 10px;
-}
+} */
 
 .text {
     max-width: 644px;
@@ -931,7 +932,7 @@ line-height: 120%;
     align-items: center;
     gap: 24px;
     margin: 0 auto;
-    padding: 30px 24px;
+    padding: 30px 0px;
 
 }
 
